@@ -1,0 +1,93 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+   
+
+}
+
+.container{
+   position: relative;
+ 
+    max-width: 800px;
+   min-width: 450px;
+    width: 80vw;
+    margin: 26px auto ;
+    height: auto;
+  
+text-align: center;
+    border-radius: 50px;
+    background: #e0ecfc;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+                
+                }
+
+ h1{
+    color: rgb(82, 73, 252);
+    font-size: 3rem;
+    height: 150px;
+ }     
+ .input h2{
+    display: inline-flex;
+    height: 40px;
+    width:180px;
+    font-size: 1.5rem;
+ margin-bottom: 5px;
+ 
+    
+ }
+ .input{display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 50px;
+     
+ }  
+ .input input{
+    
+    border: #ffffff;
+    height: 50px;
+    
+    border-radius: 50px;
+    background: #f4f9ff;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+                
+ }   
+ #forgot{
+
+    text-decoration: none;
+    position: relative;
+    left: 30%;
+    top: 2px;
+ }  
+ button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #fcfcfd9b;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  #register{
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  #date{
+   width: 150px;
+  }
+.btntxt{
+    color: rgb(77, 49, 221);
+  }  

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/productinfo.css">
+</head>
+
+<body>
+
+    <div class="button">
+    <a href="/addproduct"><button class="btn"> add new product</button></a>
+</div>
+    <div class="table">
+        <!-- <form action="" method="post" class="tableform"> -->
+        <table class="productlist-table">
+            <thead>
+                <tr>
+                    <th>productname</th>
+                    <th>rating</th>
+                    <th>stock</th>
+                    <th>category</th>
+                    <th>description</th>
+                    <th>productimage</th>
+                    <th>prize</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <% if (x.length>0){ %>
+                <% x.forEach((i)=>{ %>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <%= i.productname %>
+                            </td>
+                            <td>
+                                <%= i.rating %>
+                            </td>
+                            <td>
+                                <%= i.stock %>
+                             
+                              
+                            </td>
+                            <td>
+                                <%= i.category %>
+                              
+                            </td>
+                            <td>
+                                <%= i.description %>
+                            </td>
+                            <td>  
+                                <%= i.productimage?.filename %>
+                            </td>
+                            <td> 
+                                <%= i.prize %>
+                            </td>
+
+
+
+                            <td><a href="/updateproduct/<%= i._id  %>"><button>update</button></a></td>
+                            <td><a href="/deleteproduct/<%= i._id  %>"><button>delete</button></a></td>
+                        </tr>
+                        <%} )}%>
+                    </tbody>
+        </table>
+        <!-- </form> -->
+    </div>
+ 
+</body>
+
+</html>

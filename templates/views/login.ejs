@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <form id="form"  method="POST" action="/login" onsubmit="return validateform()">
+    <div class="container"><h1>login</h1>
+        
+        <div class="input">
+            <h2>E-mail Id</h2>
+            <input type="email"placeholder="@gmail.com" id="email" name="email" autocomplete="email"><span id="err1"></span>
+            
+        </div>
+        <div class="input">
+            <h2>Password</h2>
+            <input type="password"placeholder="password" id="password" name="password" autocomplete="current-password"><span id="err2"></span>
+            <a id="forgot" href="/">forgot password?</a>
+            
+        </div>
+        <div class="submit">
+           <button type="submit"><b class="btntxt">login</b></button>
+        </div>
+        <div class="register">
+            <h2>or</h2>
+            <a id="register" href="/register">create account</a>
+        </div>
+    </div>
+   </form>
+ 
+</body>
+<script src="/scripts/login.js"></script>
+</html>

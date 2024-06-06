@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style2.css">
+</head>
+<body>
+    <form  method="POST" action="/register">
+        
+        <div class="container">
+            <h1 >Register</h1>
+        <div class="input">
+            <h2>Name</h2>
+            <input type="text"placeholder="name" id="name" name="name" autocomplete="namel"><span class="err" ></span>
+            
+        </div>
+        
+        
+        <div class="input">
+            <h2 id="date">Date of birth</h2>
+            <input type="date"placeholder="dd/mm/yyyy" name="dob" id="dob" autocomplete="bday-day"><span class="err" ></span>
+            
+        </div> 
+        
+        
+        <div class="input">
+            <h2>address</h2>
+            <input type="address"placeholder="address" name="address" id="address" autocomplete="address-level1"><span class="err" ></span>
+            
+        </div>
+        <div class="input">
+            <h2>contact</h2>
+            <input type="text" inputmode='numeric'placeholder='phone no.' name="contact" id="phone" pattern="[0-9]{10}"><span class="err" required></span>
+           
+        </div>
+        <div class="input">
+            <h2>E-mail Id</h2>
+            <input type="email"placeholder="@gmail.com" id="email" name="email" autocomplete="email"><span id="err1"></span>
+            
+        </div>
+        <div class="input">
+            <h2>Password</h2>
+            <input type="password"placeholder="password" id="password" name="password" autocomplete="current-password"><span id="err2"></span>
+            <a id="forgot" href="/login.html">forgot password?</a>
+            
+        </div>
+        <div class="input">
+            <h2>confirm Password</h2>
+            <input type="password"placeholder="password" id="confirmpassword" name="cpassword" autocomplete="current-password"><span id="err2"></span>
+            <a id="forgot" href="/login.html">forgot password?</a>
+            
+        </div>
+        <div class="submit">
+            <button type="submit"><b class="btntxt">submit</b></button>
+         </div>
+    </div>
+
+    </form>
+</body>
+
+</html>

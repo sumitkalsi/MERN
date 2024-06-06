@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/productdetails.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+        <img src="data:<&= i.productimage?.extention%>;base64,<%=i.productimage?.content%>"  alt="">
+    </div>
+    <div class="info">
+      
+        <div class="productname"><h1> <%= i.productname %></h1></div>
+        <div class="prize"><h1>prize: <%= i.prize %></h1></div>
+        <div class="rating">rating: <%= i.rating %> </div>
+        <div class="description">description: <%= i.description %></div>
+       
+        <div class="buttons">
+            <button>place order</button>
+            <button> add to cart</button>
+        </div>
+        
+
+    </div>
+    </div>
+</body>
+</html>
